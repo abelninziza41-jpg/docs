@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body  { background-color: blue;
+            text-align: center;}
+</style>
+    <title>JavaScript Operators Example</title>
+</head>
+<body>
+
+    <h2>JavaScript Operators using 24 and 16</h2>
+
+    <button onclick="showOperators()">Show Results</button>
+
+    <pre id="result"></pre>
+
+    <script>
+        function showOperators() {
+
+            let a = 24;
+            let b = 16;
+            let output = "";
+
+            // Arithmetic Operators
+            output += "Arithmetic Operators:\n";
+            output += "a + b = " + (a + b) + "\n";
+            output += "a - b = " + (a - b) + "\n";
+            output += "a * b = " + (a * b) + "\n";
+            output += "a / b = " + (a / b) + "\n";
+            output += "a % b = " + (a % b) + "\n\n";
+
+            // Assignment Operators
+            let x = a;
+            output += "Assignment Operators:\n";
+            x += b;
+            output += "x += b ? " + x + "\n";
+            x -= b;
+            output += "x -= b ? " + x + "\n";
+            x *= b;
+            output += "x *= b ? " + x + "\n";
+            x /= b;
+            output += "x /= b ? " + x + "\n\n";
+
+            // Comparison Operators
+            output += "Comparison Operators:\n";
+            output += "a == b ? " + (a == b) + "\n";
+            output += "a != b ? " + (a != b) + "\n";
+            output += "a > b ? " + (a > b) + "\n";
+            output += "a < b ? " + (a < b) + "\n";
+            output += "a >= b ? " + (a >= b) + "\n";
+            output += "a <= b ? " + (a <= b) + "\n\n";
+
+            // Logical Operators
+            output += "Logical Operators:\n";
+            output += "(a > 10 && b > 10) ? " + (a > 10 && b > 10) + "\n";
+            output += "(a > 30 || b > 10) ? " + (a > 30 || b > 10) + "\n";
+            output += "!(a > b) ? " + !(a > b) + "\n\n";
+
+            // Increment & Decrement
+            let y = a;
+            output += "Increment / Decrement:\n";
+            y++;
+            output += "y++ ? " + y + "\n";
+            y--;
+            output += "y-- ? " + y + "\n";
+
+            document.getElementById("result").innerText = output;
+        }
+    </script>
+
+</body>
+</html>

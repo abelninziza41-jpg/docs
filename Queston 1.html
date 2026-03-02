@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+body  { background-color: purple;
+            text-align: center;}
+</style>
+    <title>String Concatenation</title>
+</head>
+<body>
+
+    <h2>Concatenate "Hello" and "World"</h2>
+
+    <button onclick="concatenateText()">Concatenate</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function concatenateText() {
+            let text1 = "Hello";
+            let text2 = "World";
+
+            // Concatenation
+            let result = text1 + " " + text2;
+
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>
+

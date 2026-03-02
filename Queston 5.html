@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+body  { background-color: ;
+            text-align: center;}
+</style>
+    <title>Display Numbers 0 to 20</title>
+</head>
+<body>
+
+    <h2>Numbers from 0 to 20 using Different Loops</h2>
+
+    <button onclick="runLoops()">Display Numbers</button>
+
+    <h3>For Loop:</h3>
+    <p id="forLoop"></p>
+
+    <h3>While Loop:</h3>
+    <p id="whileLoop"></p>
+
+    <h3>Do While Loop:</h3>
+    <p id="doWhileLoop"></p>
+
+    <script>
+        function runLoops() {
+
+            // FOR LOOP
+            let forOutput = "";
+            for (let i = 0; i <= 20; i++) {
+                forOutput += i + " ";
+            }
+            document.getElementById("forLoop").innerHTML = forOutput;
+
+            // WHILE LOOP
+            let whileOutput = "";
+            let j = 0;
+            while (j <= 20) {
+                whileOutput += j + " ";
+                j++;
+            }
+            document.getElementById("whileLoop").innerHTML = whileOutput;
+
+            // DO WHILE LOOP
+            let doWhileOutput = "";
+            let k = 0;
+            do {
+                doWhileOutput += k + " ";
+                k++;
+            } while (k <= 20);
+            document.getElementById("doWhileLoop").innerHTML = doWhileOutput;
+        }
+    </script>
+
+</body>
+</html>

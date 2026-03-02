@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+body  { background-color: red;
+            text-align: center;}
+</style>
+    <title>Day of the Week</title>
+</head>
+<body>
+
+    <h2>Find Day of the Week</h2>
+
+    <label>Enter a number (1-7): </label>
+    <input type="number" id="dayNumber" min="1" max="7">
+    <button onclick="showDay()">Show Day</button>
+
+    <h3 id="result"></h3>
+
+    <script>
+        function showDay() {
+            let dayNumber = parseInt(document.getElementById("dayNumber").value);
+            let day;
+
+            switch(dayNumber) {
+                case 1:
+                    day = "Sunday";
+                    break;
+                case 2:
+                    day = "Monday";
+                    break;
+                case 3:
+                    day = "Tuesday";
+                    break;
+                case 4:
+                    day = "Wednesday";
+                    break;
+                case 5:
+                    day = "Thursday";
+                    break;
+                case 6:
+                    day = "Friday";
+                    break;
+                case 7:
+                    day = "Saturday";
+                    break;
+                default:
+                    day = "Invalid input! Please enter a number between 1 and 7.";
+            }
+
+            document.getElementById("result").innerHTML = day;
+        }
+    </script>
+
+</body>
+</html>

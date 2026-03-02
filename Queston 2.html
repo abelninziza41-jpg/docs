@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+body  { background-color: yellow;
+            text-align: center;}
+</style>
+    <title>Convert Name to Uppercase</title>
+</head>
+<body>
+    <h2>Enter your name:</h2>
+    <input type="text" id="nameInput" placeholder="Type your name here">
+    <button onclick="convertToUpper()">Convert to Uppercase</button>
+
+    <p id="result"></p>
+
+    <script>
+        function convertToUpper() {
+            var name = document.getElementById("nameInput").value;
+            var upperName = name.toUpperCase();
+            document.getElementById("result").innerText = "Your name in uppercase is: " + upperName;
+        }
+    </script>
+</body>
+</html>
